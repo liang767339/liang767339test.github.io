@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on BY LIANG</title>
+    <link>https://liang767339.github.io/post/</link>
+    <description>Recent content in Posts on BY LIANG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 03 Feb 2021 10:41:43 +0800</lastBuildDate><atom:link href="https://liang767339.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>redis 笔记</title>
+      <link>https://liang767339.github.io/post/blog/</link>
+      <pubDate>Wed, 03 Feb 2021 10:41:43 +0800</pubDate>
+      
+      <guid>https://liang767339.github.io/post/blog/</guid>
+      <description>redis string类型 ########################################启动############################################# [root@localhost bin]# redis-server lconfig/redis.conf #启动服务 [root@localhost bin]# [root@localhost bin]# redis-cli -p 6379 #启动客户端 ########################################string########################################## 127.0.0.1:6379&amp;gt; set key1 v1 #设置值 OK 127.0.0.1:6379&amp;gt; get key1 #获取值 &amp;#34;v1&amp;#34; 127.0.0.1:6379&amp;gt; keys * #查看所有值 1) &amp;#34;key:__rand_int__&amp;#34; 2) &amp;#34;name&amp;#34; 3) &amp;#34;key1&amp;#34; 4) &amp;#34;views&amp;#34; 127.0.0.1:6379&amp;gt; 127.0.0.1:6379&amp;gt; EXISTS key1 #是否存在 (integer) 1 127.0.0.1:6379&amp;gt; 127.0.0.1:6379&amp;gt; APPEND key1 &amp;#34;hello&amp;#34; #追加一个字符串，如果当前key不存在，就相当于新建一个key (integer) 7 127.0.0.1:6379&amp;gt; get key1 &amp;#34;v1hello&amp;#34; 127.0.0.1:6379&amp;gt; strlen key1 #获取字符串的长度 (integer) 7 127.0.0.1:6379&amp;gt; 127.0.0.1:6379&amp;gt; ########################################string########################################## 127.0.0.1:6379&amp;gt; get views &amp;#34;3&amp;#34; 127.</description>
+    </item>
+    
+  </channel>
+</rss>
